@@ -33,6 +33,8 @@
 #include <unistd.h>
 #include <err.h>
 #include <signal.h>
+#include <sys/sysmacros.h>
+
 /** 
 *	gsmmux.h provides n_gsm line dicipline structures and functions. 
 *	It should be kept in sync with your kernel release.
@@ -50,7 +52,7 @@
 #endif
 
 /* serial port of the modem */
-#define SERIAL_PORT	"/dev/ttyS1"
+#define SERIAL_PORT	"/dev/ttyUSB2"
 
 /* line speed */
 #define LINE_SPEED	B115200
